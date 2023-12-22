@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAUCYBYTES MENU</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #e3e3e3;
+            margin: 0;
+            padding: 0;
+            font-family: 'Copperplate Gothic', sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 10%;
+        }
+
+        .cards {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            height: 100vh;
+        }
+
+        .card {
+            min-width: 100%;
+            padding-left: 20px;
+            scroll-snap-align: start;
+            font-size: 45px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            scroll-snap-align: start;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            overflow: hidden;
+        }
+
+        .card .nom {
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: auto;
+            margin-top: 100px;
+        }
+
+        .card .detail {
+            font-size: 15px;
+        }
+
+        .card .logos-container {
+            margin-top: 80px;
+            height: 80%;
+            width: 100%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .card .logos-container .logo {
+            position: relative;
+            height: 35px;
+            width: auto;
+            transform: scale(0.3); /* Taille initiale */
+            transition: transform 2.0s ease-in-out;
+        }
+
+        .card.zoom-in {
+            opacity: 1;
+        }
+
+        .card.zoom-in .logos-container .logo {
+            transform: scale(1);
+        }
+    
+
+        .nav-links {
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #e3e3e3;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #sand1 { top: 100px; left: 0px; width: 17px; height: auto;}
+        #sand2 { top: 50px; left: -30px; width: 50px; height: auto;}
+        #sand3 { top: 10px; left: 10px; width: 50px; height: auto;}
+        #sand4 { top: 20px; left: -90px; width: 20px; height: auto;}
+        #sand5 { top: 10px; left: -5px; width: 20px; height: auto;}
+        #sand6 { top: -30px; left: -205px; width: 50px; height: auto;}
+        #sand7 { top: -90px; left: 230px; width: 50px; height: auto;}
+        #sand8 { top: -150px; left: 170px; width: 20px; height: auto;}
+        #sand {top: 20px; left: 15%; transform: translateX(-50%); height: 170px; width: auto; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo_saucy_bytes.svg" alt="Votre Logo">
+        <br><p class="detail">Préparez-vous à un festin joyeux ! Notre collection de plats, sandwiches et burgers est créée avec amour, rigueur, et une pincée de comique. Chaque bouchée est une aventure délicieusement drôle, car chez nous, la bonne cuisine est aussi une fête pour vos papilles et votre sourire !</p>
+    <!-- Liens de navigation -->
+        <ul class="nav-links">
+            <li><a href="#">ASSIETES</a></li>
+            <li><a href="#">SANDWICHES</a></li>
+            <li><a href="#">BURGURS</a></li>
+            <li><a href="#">BOISSONS</a></li>
+            <li><a href="#">DESSERT</a></li>
+        </ul>
+    </header>
+    <div class="cards">
+        <div class="card" id="scroll-container">
+            <div class="nom">BURGER VEGETARIEN
+                <br><p class="detail">left, sauce secrète, pain maison, crudités</p>
+                <p class="detail">450 DA</p>
+            </div>
+            <div class="logos-container">
+                <img id="sand1" class="logo" src="images/10.png">
+                <img id="sand2" class="logo" src="images/p.png">
+                <img id="sand3" class="logo" src="images/5.png">
+                <img id="sand4" class="logo" src="images/m1.png">
+                <img id="sand5" class="logo" src="images/m3.png">
+                <img id="sand6" class="logo" src="images/6.png">
+                <img id="sand7" class="logo" src="images/s.png">
+                <img id="sand8" class="logo" src="images/7.png">
+                <img id="sand" class="logo" src="images/sand.png"><br>
+            </div>
+        </div>
+        <div class="card" id="scroll-container">
+            <div class="nom">BURGER POULET
+                <br><p class="detail">Poulet, sauce secrète, pain maison, crudités</p>
+                <p class="detail">450 DA</p>
+            </div>
+            <div class="logos-container">
+                <img id="sand1" class="logo" src="images/10.png">
+                <img id="sand2" class="logo" src="images/p.png">
+                <img id="sand3" class="logo" src="images/5.png">
+                <img id="sand4" class="logo" src="images/m1.png">
+                <img id="sand5" class="logo" src="images/m3.png">
+                <img id="sand6" class="logo" src="images/6.png">
+                <img id="sand7" class="logo" src="images/s.png">
+                <img id="sand8" class="logo" src="images/7.png">
+                <img id="sand" class="logo" src="images/sand.png"><br>
+            </div>
+        </div>
+        <div class="card" id="scroll-container">
+            <div class="nom">BURGER viande
+                <br><p class="detail">viande, sauce secrète, pain maison, crudités</p>
+                <p class="detail">450 DA</p>
+            </div>
+            <div class="logos-container">
+                <img id="sand1" class="logo" src="images/10.png">
+                <img id="sand2" class="logo" src="images/p.png">
+                <img id="sand3" class="logo" src="images/5.png">
+                <img id="sand4" class="logo" src="images/m1.png">
+                <img id="sand5" class="logo" src="images/m3.png">
+                <img id="sand6" class="logo" src="images/6.png">
+                <img id="sand7" class="logo" src="images/s.png">
+                <img id="sand8" class="logo" src="images/7.png">
+                <img id="sand" class="logo" src="images/sand.png"><br>
+            </div>
+        </div>
+        <div class="card" id="scroll-container">
+            <div class="nom">BURGER FISH
+                <br><p class="detail">POISSONS, sauce secrète, pain maison, crudités</p>
+                <p class="detail">450 DA</p>
+            </div>
+            <div class="logos-container">
+                <img id="sand1" class="logo" src="images/10.png">
+                <img id="sand2" class="logo" src="images/p.png">
+                <img id="sand3" class="logo" src="images/5.png">
+                <img id="sand4" class="logo" src="images/m1.png">
+                <img id="sand5" class="logo" src="images/m3.png">
+                <img id="sand6" class="logo" src="images/6.png">
+                <img id="sand7" class="logo" src="images/s.png">
+                <img id="sand8" class="logo" src="images/7.png">
+                <img id="sand" class="logo" src="images/sand.png"><br>
+            </div>
+        </div>
+        <div class="card" id="scroll-container">
+            <div class="nom">BURGER HALOUF
+                <br><p class="detail">SANGLIER, sauce secrète, pain maison, crudités</p>
+                <p class="detail">450 DA</p>
+            </div>
+            <div class="logos-container">
+                <img id="sand1" class="logo" src="images/10.png">
+                <img id="sand2" class="logo" src="images/p.png">
+                <img id="sand3" class="logo" src="images/5.png">
+                <img id="sand4" class="logo" src="images/m1.png">
+                <img id="sand5" class="logo" src="images/m3.png">
+                <img id="sand6" class="logo" src="images/6.png">
+                <img id="sand7" class="logo" src="images/s.png">
+                <img id="sand8" class="logo" src="images/7.png">
+                <img id="sand" class="logo" src="images/sand.png"><br>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres cartes au besoin -->
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Détecter le défilement horizontal
+            let lastScrollLeft = 0;
+            const scrollContainer = document.querySelector('.cards');
+
+            scrollContainer.addEventListener("scroll", function() {
+                let scrollLeft = scrollContainer.scrollLeft;
+
+                // Calculez la direction du défilement
+                let direction = (scrollLeft > lastScrollLeft) ? 1 : -1;
+
+                // Appliquez l'effet de zoom sur la carte visible
+                applyZoomInEffect(direction);
+
+                lastScrollLeft = scrollLeft;
+            });
+
+            function applyZoomInEffect(direction) {
+                // Récupérez toutes les cartes
+                const cards = document.querySelectorAll('.card');
+
+                // Récupérez la carte actuellement visible
+                let visibleCard = null;
+                cards.forEach(card => {
+                    const rect = card.getBoundingClientRect();
+                    if (rect.left >= 0 && rect.right <= window.innerWidth) {
+                        visibleCard = card;
+                    }
+                });
+
+                // Si une carte est visible, ajoutez la classe de zoom-in
+                if (visibleCard) {
+                    visibleCard.classList.add('zoom-in');
+                }
+
+                // Supprimez la classe de zoom-in des autres cartes
+                cards.forEach(card => {
+                    if (card !== visibleCard) {
+                        card.classList.remove('zoom-in');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
